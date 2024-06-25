@@ -13,7 +13,7 @@ def get_data():
 def get_faithful_hist(bins):
     faithful = get_data()
     fig, ax = plt.subplots()
-    ax.hist(faithful["waiting"], bins=bins, color="blue")
+    ax.hist(faithful["waiting"], bins=bins, color="green")
     plt.close(fig)  # Évite les fuites de mémoire
     return fig
 
